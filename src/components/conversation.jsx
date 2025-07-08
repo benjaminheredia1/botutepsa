@@ -28,7 +28,7 @@ export function PhoneCall() {
   const startCall = useCallback(async () => {
     try {
       await navigator.mediaDevices.getUserMedia({ audio: true });
-      await startSession({ agentId: 'agent_01jzk9n4w0fxvad1cfzteswh02' }); // ¡Reemplaza con tu Agent ID!
+      await startSession({ agentId: 'agent_01jzn7tt65egxadgvevx7agqqj' }); // ¡Reemplaza con tu Agent ID!
     } catch (error) {
       console.error('Failed to start conversation:', error);
     }
@@ -42,7 +42,7 @@ export function PhoneCall() {
     if (status === 'connected') return formatTime(timer);
     if (status === 'connecting') return 'conectando...';
     if (status === 'disconnected') return 'Llamada finalizada';
-    return 'Asistente UDABOL'; // Texto inicial antes de llamar
+    return 'Asistente UTEPSA'; // Texto inicial antes de llamar
   };
 
   // Opciones de llamada que aparecen durante la llamada (son decorativas)
@@ -89,7 +89,7 @@ export function PhoneCall() {
             <MdAccountCircle className="text-9xl text-gray-400" />
           </motion.div>
           <h2 className="text-4xl font-semibold mt-4">
-            {status !== 'idle' && status !== 'disconnected' ? 'Asistente UDABOL' : ''}
+            {status !== 'idle' && status !== 'disconnected' ? 'Asistente Utepsa' : ''}
           </h2>
           <p className="text-lg text-gray-400 h-6 mt-1">{getStatusText()}</p>
         </motion.div>
