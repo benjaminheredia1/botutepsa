@@ -28,7 +28,7 @@ export function PhoneCall() {
   const startCall = useCallback(async () => {
     try {
       await navigator.mediaDevices.getUserMedia({ audio: true });
-      await startSession({ agentId: 'agent_01jzn7tt65egxadgvevx7agqqj' }); // ¡Reemplaza con tu Agent ID!
+      await startSession({ agentId: 'agent_6201k570j51kf6kb28yxb30e3arv' }); // ¡Reemplaza con tu Agent ID!
     } catch (error) {
       console.error('Failed to start conversation:', error);
     }
