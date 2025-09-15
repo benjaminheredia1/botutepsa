@@ -42,7 +42,7 @@ export function PhoneCall() {
     if (status === 'connected') return formatTime(timer);
     if (status === 'connecting') return 'conectando...';
     if (status === 'disconnected') return 'Llamada finalizada';
-    return 'Asistente UTEPSA'; // Texto inicial antes de llamar
+    return 'Tiendas Roho'; // Texto inicial antes de llamar
   };
 
   // Opciones de llamada que aparecen durante la llamada (son decorativas)
